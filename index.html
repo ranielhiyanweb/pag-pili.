@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ha?</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    }
+    .prompt-container {
+      background-color: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      padding: 2rem 3rem;
+      max-width: 360px;
+      text-align: center;
+    }
+    .prompt-text {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    button {
+      font-size: 1rem;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      user-select: none;
+    }
+    button:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px #6c63ffaa;
+    }
+    button.yes {
+      background-color: #4caf50;
+      color: white;
+    }
+    button.yes:hover {
+      background-color: #438a45;
+      box-shadow: 0 4px 12px rgba(76,175,80,0.6);
+    }
+    button.no {
+      background-color: #f44336;
+      color: white;
+    }
+    button.no:hover {
+      background-color: #d7382f;
+      box-shadow: 0 4px 12px rgba(244,67,54,0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="prompt-container" role="dialog" aria-labelledby="prompt-label" aria-modal="true">
+    <div id="prompt-label" class="prompt-text">Kaon ka tae? </div>
+    <div class="buttons">
+      <button type="button" class="yes" aria-label="Yes button">Yes</button>
+      <button type="button" class="no" aria-label="No button">No</button>
+    </div>
+  </div>
+
+  <script>
+    const yesBtn = document.querySelector('button.yes');
+    const noBtn = document.querySelector('button.no');
+
+    yesBtn.addEventListener('click', () => {
+      alert('kay nag (yes) man ka lakaw kaon with video hab.');
+    });
+
+    noBtn.addEventListener('click', () => {
+      alert(`kay nag (no) man ka ide hatagig singko si raniel inig klase.`);
+    });
+  </script>
+</body>
+</html>
