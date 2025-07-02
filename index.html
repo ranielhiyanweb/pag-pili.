@@ -1,95 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>finding jowa</title>
+  <meta charset="UTF-8">
+  <title>Ge1</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      flex-direction: column;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
     }
-    .prompt-container {
-      background-color: white;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      border-radius: 12px;
-      padding: 2rem 3rem;
-      max-width: 360px;
-      text-align: center;
-    }
-    .prompt-text {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
+
+    h1 {
+      margin-bottom: 20px;
       color: #333;
     }
-    .buttons {
-      display: flex;
-      justify-content: space-evenly;
-    }
-    button {
-      font-size: 1rem;
-      padding: 0.75rem 2rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      user-select: none;
-    }
-    button:focus {
-      outline: none;
-      box-shadow: 0 0 0 3px #6c63ffaa;
-    }
-    button.yes {
-      background-color: #4caf50;
-      color: white;
-    }
-    button.yes:hover {
-      background-color: #438a45;
-      box-shadow: 0 4px 12px rgba(76,175,80,0.6);
-    }
-    button.no {
-      background-color: #f44336;
-      color: white;
-    }
-    button.no:hover {
-      background-color: #d7382f;
-      box-shadow: 0 4px 12px rgba(244,67,54,0.6);
+
+    video {
+      max-width: 90%;
+      max-height: 80%;
+      border: 2px solid #444;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
-  <div class="prompt-container" role="dialog" aria-labelledby="prompt-label" aria-modal="true">
-    <div id="prompt-label" class="prompt-text">gusto ka'g uyab?</div>
-    <div class="buttons">
-      <button type="button" class="yes" aria-label="Yes button">Yes</button>
-      <button type="button" class="no" aria-label="No button">No</button>
-    </div>
-  </div>
 
-  <script>
-    const yesBtn = document.querySelector('button.yes');
-    const noBtn = document.querySelector('button.no');
+  <h1>Ge1 full Video</h1>
+  <video controls>
+    <source src="/VID_20250701_092042.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-    yesBtn.addEventListener('click', () => {
-      alert('Kay nag yes man ka! pindota ang ok mapunta nakas jowa nimo!\n\n officially yours na.');
-      // Redirect after alert
-      window.location.href = 'https://www.facebook.com/RanielHiyanBigdick';
-    });
-
-    noBtn.addEventListener('click', () => {
-      alert('Kay nag yes man ka! pindota ang ok mapunta nakas jowa nimo!\n\n officially yours na.');
-      // Redirect after alert
-      window.location.href = 'https://www.facebook.com/RanielHiyanBigdick';
-    });
-  </script>
 </body>
 </html>
-
-
